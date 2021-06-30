@@ -18,6 +18,7 @@ function App() {
     const newItems = items.filter((item) => item.category === category);
     setMenuItems(newItems);
   };
+
   return (
     <main>
       <section className="menu section">

@@ -29,7 +29,9 @@ function App() {
   console.log(tours);
 
   useEffect(() => {
-    fetchTours();
+    (async () => {
+      await fetchTours();
+    })();
   }, []);
 
   if (loading) {
